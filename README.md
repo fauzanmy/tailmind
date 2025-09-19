@@ -9,6 +9,6 @@ Tailmind is a modern admin dashboard template built with Tailwind CSS. It's desi
 - 🧩 Modular components: sidebar, navbar, cards, tables, etc.
 - 🎨 Easy to customize with Tailwind configuration
 
-  ## 📄 License
+## 📄 License
 
-  MIT License
+MIT License
