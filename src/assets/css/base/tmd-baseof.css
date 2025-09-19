@@ -1,0 +1,60 @@
+/**
+ * This stylesheet defines styles for the page layouts,
+ * including wrapper, aside sidebar, main container,
+ * and responsive collapse.
+ *
+ * Part of the Tailmind UI system.
+ *
+ * (c) Tailmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+/* Layout wrapper for sidebar and main content */
+.tmd-wrapper {
+	@apply grid grid-cols-1 h-screen transition-all duration-300 ease-in-out 
+	lg:grid-cols-[260px_1fr];
+}
+
+/* Sidebar container with slide-in/out behavior */
+.tmd-sidebar {
+	@apply fixed inset-y-0 left-0 z-40 transform -translate-x-full transition-transform duration-200 ease-in-out
+	lg:translate-x-0 lg:static;
+}
+
+/* Collapse state for wrapper */
+.tmd-wrapper.tmd-sidebar_collapse {
+	@apply lg:grid-cols-1;
+}
+
+/* Collapse behavior for sidebar */
+.tmd-sidebar_collapse .tmd-sidebar {
+	@apply translate-x-0 lg:-translate-x-full lg:fixed;
+}
+
+/* Scrollable container for main content */
+.tmd-container {
+	@apply overflow-y-auto h-screen;
+}
+
+/* Header area */
+.tmd-header {
+	@apply sticky top-0 z-30 
+	bg-blaga-100/69 text-blaga-900 dark:bg-blaga-950/69 dark:text-blaga-100 
+	shadow-md lg:shadow-none;
+}
+
+/* Main content area */
+.tmd-main {
+	@apply space-y-4 p-4 md:p-6 lg:p-8 lg:mr-8 rounded-none lg:rounded-2xl;
+}
+
+.tmd-sidebar_collapse .tmd-main {
+	@apply lg:mr-8 lg:mx-8 rounded-none lg:rounded-2xl;
+}
+
+/* Footer area */
+.tmd-footer {
+	@apply px-4 py-4  md:px-6 lg:px-8 text-xs lg:text-sm text-blaga-500;
+}

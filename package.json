@@ -1,0 +1,28 @@
+{
+    "name": "tailmind",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Tailmind is a modern admin dashboard template built with Tailwind CSS. It's designed for developers who want a clean, responsive, and easily customizable UI.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [
+        "tailwindcss",
+        "admin",
+        "template",
+        "dashboard"
+    ],
+    "author": "Fauzan My",
+    "license": "ISC",
+    "packageManager": "pnpm@10.14.0",
+    "devDependencies": {
+        "@kingkongdevs/vite-plugin-html-includes": "^1.0.5",
+        "@tailwindcss/vite": "^4.1.13",
+        "tailwindcss": "^4.1.13",
+        "vite": "^7.1.6"
+    }
+}

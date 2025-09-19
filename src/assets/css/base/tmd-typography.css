@@ -1,0 +1,11 @@
+.tmd-title {
+    @apply text-xl font-bold;
+}
+
+.tmd-subtitle {
+    @apply text-lg font-semibold;
+}
+
+.tmd-heading {
+    @apply text-lg font-bold;
+}

@@ -1,0 +1,46 @@
+/**
+ * Stylesheet for the notification bell icon component.
+ * Includes dropdown menu styling, SVG icon adjustments,
+ * interactive behaviors, and badge display functionality.
+ *
+ * Part of the Dashmind UI System.
+ *
+ * © Dashmin
+ *
+ * For full copyright and license details,
+ * please refer to the LICENSE file included with this source code.
+ */
+
+/* notification button container */
+
+.notification-dropdown {
+    @apply relative;
+}
+
+.bell-button {
+    @apply relative flex items-center justify-center size-9 lg:size-10 rounded-full 
+	hover:bg-primary/50 active:bg-primary/75 group-hover:bg-primary/25 cursor-pointer;
+}
+
+.badge {
+    @apply absolute right-0 top-0 size-4 flex items-center justify-center rounded-full 
+    bg-red text-[8px] text-white leading-none
+}
+
+/* notification dropdown container */
+.notification {
+	@apply absolute right-0 top-full left-auto w-56;
+}
+
+
+.notification-menu-container {
+    @apply shadow-lg bg-blaga-50 dark:bg-blaga-800 rounded-lg
+}
+
+/* dropdown menu items */
+.notification-menu-item {
+	@apply flex items-center space-x-4 hover:bg-blaga-500/30 rounded-md px-4 py-2 line-clamp-1;
+}
+.notification-menu-item span {
+	@apply line-clamp-1;
+}

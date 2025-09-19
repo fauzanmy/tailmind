@@ -1,0 +1,22 @@
+/**
+ * This file is part of Tailmin.
+ *
+ * (c) Tailmin
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+/* Menghilangkan panah default di Chrome */
+summary::marker {
+	@apply hidden;
+}
+
+/* Menghilangkan panah default di Firefox */
+summary {
+	@apply list-none;
+}
+
+hr {
+	@apply mx-4 border-blaga-300/30;
+}

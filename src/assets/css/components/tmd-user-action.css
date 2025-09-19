@@ -1,0 +1,53 @@
+/**
+ * This stylesheet defines styles for the User Action component,
+ * including dropdown menus, avatar interactions, account controls,
+ * and logout link functionality.
+ *
+ * Part of the Dashmind UI system.
+ *
+ * (c) Dashmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+/* Parent container */
+.account-dropdown {
+	@apply relative size-9 lg:size-10;
+}
+
+/* child */
+.user-avatar {
+	@apply flex items-center size-full cursor-pointer;
+}
+
+.user-avatar img {
+	@apply rounded-full w-full h-full active:opacity-75;
+}
+
+/* child absolute container */
+.user-action-container {
+	@apply shadow-lg bg-blaga-50 dark:bg-blaga-800 rounded-lg;
+}
+
+.user-info {
+	@apply flex items-center space-x-2;
+}
+
+.user-info img {
+	@apply size-14 rounded-full;
+}
+
+.user-action {
+	@apply absolute right-0 top-full left-auto w-56;
+}
+
+/* menus container */
+.user-action-menu {
+	@apply flex flex-col space-y-1;
+}
+
+/* menu child item */
+.user-action-item {
+	@apply flex items-center space-x-4 hover:bg-blaga-600/50 rounded-md px-4 py-2 text-nowrap;
+}

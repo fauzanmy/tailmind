@@ -1,0 +1,35 @@
+/*
+ * .dash-nav-header
+ */
+
+.logo {
+	@apply rounded-full flex items-center bg-primary p-1 text-white;
+}
+
+.brand {
+	@apply font-semibold text-lg;
+}
+
+/* .theme-switcher component
+ * All styles for .theme-switcher are located in: /css/components/tmd-dark-mode.css
+*/
+
+.sidebar-container {
+	@apply flex flex-col justify-between h-screen overflow-y-auto;
+}
+
+.sidebar-header {
+	@apply flex items-center space-x-4 py-3 px-4;
+}
+
+.sidebar-menu-container {
+    @apply space-y-4;
+}
+
+/* .dash-nav-menus component
+ * All styles for .dash-nav-menus are located in: /css/components/details.css
+*/
+
+.sidebar-footer {
+	@apply px-4 py-2 mt-4;
+}

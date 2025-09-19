@@ -1,0 +1,136 @@
+<header class="tmd-header py-3">
+    <div class="relative flex items-center justify-between px-4 md:px-6 lg:px-8">
+
+        <!-- HEADER MENU LEFT -->
+        <div class="header-menu-left">
+            <button class="burger-menu size-9 lg:size-10 btn toggle-button" data-target="tmd-dashboard"
+                data-toggle-class="tmd-sidebar_collapse" aria-label="Toggle sidebar menus">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+
+            <div class="tmd-title">
+                <h2 class="tmd-subtitle">Dashboard</h2>
+            </div>
+
+        </div>
+        <!-- #END HEADER MENU LEFT -->
+
+        <!-- HEADER MENU RIGHT -->
+        <div class="header-menu-right space-x-5">
+
+            <!-- NOTIFICATION DROPDOWN -->
+            <div class="notification-dropdown group">
+
+                <button class="bell-button toggle-button" data-target="notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                    </svg>
+                    <span class="badge">12</span>
+                </button>
+
+                <div id="notification" class="notification close group-hover:block pt-2.5">
+
+                    <div class="notification-menu-container">
+                        <div class="flex items-center justify-between px-4 py-2 border-b border-blaga-500/50">
+                            <span class="text-semibold">Notification</span>
+                            <button class="text-sm cursor-pointer hover:text-primary">View all</button>
+                        </div>
+                        <ul class="notification-menu text-sm">
+                            <li><a class="notification-menu-item" href="#"><span>Lorem ipsum dolor.</span></a></li>
+                            <li><a class="notification-menu-item" href="#"><span>Lorem ipsum dolor sit amet lorem
+                                        ipsum.</span></a>
+                            </li>
+                            <li><a class="notification-menu-item" href="#"><span>Lorem ipsum dolor sit amet lorem
+                                        ipsum sit amet dolor</span></a></li>
+                            <li><a class="notification-menu-item" href="#"><span>Lorem dolor sit amet lorem ipsum
+                                        sit</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- #END NOTIFICATION DROPDOWN-->
+
+            <!-- ACCOUNT DROPDOWN -->
+            <div class="account-dropdown group">
+
+                <div class="user-avatar toggle-button" data-target="user-action">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" width="499" height="498" alt="Avatar">
+                </div>
+
+                <div id="user-action" class="user-action close group-hover:block pt-2.5" role="menu">
+
+                    <div class="user-action-container">
+
+                        <div class="user-info p-4">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" width="499" height="498"
+                                alt="Avatar">
+                            <ul>
+                                <li class="font-semibold">Jonathan Doe</li>
+                                <li class="text-sm text-blaga-500/75">Administrator</li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <ul class="user-action-menu text-sm p-2">
+                            <li>
+                                <a class="user-action-item" href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                        </svg>
+                                    </span>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="user-action-item" href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                                        </svg>
+                                    </span>
+                                    <span>Account Setting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="user-action-item" href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                                        </svg>
+                                    </span>
+                                    <span>Sign out</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- #END ACCOUNT DROPDOWN -->
+
+        </div>
+        <!-- #END HEADER MENU RIGHT -->
+
+    </div>
+</header>

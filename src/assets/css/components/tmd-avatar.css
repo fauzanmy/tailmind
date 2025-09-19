@@ -1,0 +1,16 @@
+/**
+ * This stylesheet defines styles for the avatar component,
+ * including dropdown list icon, interactions, hover controls,
+ * and logout link functionality.
+ *
+ * Part of the Tailmind UI system.
+ *
+ * (c) Tailmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+.avatar {
+	@apply rounded-full size-10;
+}

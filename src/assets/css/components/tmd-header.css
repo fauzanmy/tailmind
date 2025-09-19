@@ -1,0 +1,29 @@
+/**
+ * This stylesheet defines styles for the User Action component,
+ * including dropdown menus, avatar interactions, account controls,
+ * and logout link functionality.
+ *
+ * Part of the Dashmind UI system.
+ *
+ * (c) Dashmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+
+/* .tmd-header main styles are located in: /css/base/tmd-baseof.css */
+
+.header-menu-left,
+.header-menu-right {
+	@apply flex items-center space-x-2
+}
+
+/* .notification-dropdown component
+ * All styles for .notification-dropdown are located in: /css/components/notification.css
+*/
+
+
+/* .account-dropdown component
+ * All styles for .account-dropdown are located in: /css/components/user-action.css
+*/

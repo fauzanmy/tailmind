@@ -1,0 +1,26 @@
+/**
+ * This stylesheet defines styles for form component,
+ * including form group, textarea, upload image,
+ * and hover style.
+ *
+ * Part of the Tailmind UI system.
+ *
+ * (c) Tailmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+ .form-group {
+    @apply flex flex-col space-y-2;
+ }
+
+  .form-group input,
+  .form-group textarea {
+    @apply bg-blaga-50 dark:bg-transparent px-4 py-2 rounded-md 
+    outline-1 -outline-offset-1 outline-blaga-800/30 dark:outline-blaga-100/20
+    focus:outline-2 focus:-outline-offset-2 focus:outline-primary
+    placeholder:text-blaga-500;
+ }
+
+ 

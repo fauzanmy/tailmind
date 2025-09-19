@@ -1,0 +1,7 @@
+.open {
+	@apply block;
+}
+
+.close {
+	@apply hidden;
+}

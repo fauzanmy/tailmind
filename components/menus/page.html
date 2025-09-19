@@ -1,0 +1,21 @@
+<!-- PAGE MENUS -->
+<div class="menus-wrapper">
+    <!-- <h2 class="text-sm uppercase mb-2 tracking-wide text-blaga-500">{{ item }}</h2> -->
+    <details class="rounded-2xl bg-blaga-200/30 dark:bg-blaga-800/25 group" data-key="menu-page" open="true">
+        <summary
+            class="flex items-center px-4 py-3 cursor-pointer rounded-t-2xl rounded-b-2xl group-open:rounded-b-none bg-blaga-200/50 dark:bg-blaga-800/30 group-open:bg-blaga-200 group-open:dark:bg-blaga-800/75 hover:bg-blaga-200/10">
+            <span class="mr-2 icon">⚙️</span>
+            <h3 class="heading">Pages</h3>
+            <span class="ml-auto marker">❯</span>
+        </summary>
+
+        <ul class="menu">
+            <each loop="item, index in items">
+                <li class="menu-item" data-id="{{ item }}-{{ index }}">
+                    <a class="block" href="/{{ item }}.html"><span class="capitalize">{{ item }}</span></a>
+                </li>
+            </each>
+        </ul>
+    </details>
+</div>
+<!-- #END PAGE MENUS -->

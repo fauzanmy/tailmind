@@ -1,0 +1,62 @@
+/*
+Theme Name: Dashmind
+Theme URI: http://insertapps.com/template/tailmind
+Author: Fauzan My
+Author URI: https://github.com/fauzanmy
+Description: Dashboard Admin template build with Vite and TailwindCSS by InsertApps Web Dev.
+Version: 0.1.0
+License: MIT MIT License
+License URI: LICENSE
+
+tailwindcss v4.1.12 | MIT License | https://tailwindcss.com
+*/
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "Inter", sans-serif;
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
+    --color-secondary: oklch(0.8344 0.132 208.5); /* #3BE0F6 blue sky */ 
+    --color-primary: oklch(52.45% 0.2084 259.5); /* #3B82F6  blue */
+    --color-blawu: oklch(0.5138 0.2597 277.36); /* #513BF6 -> blue violet */
+    --color-red: oklch(0.5915 0.202 21.24); /* #dc3545 -> red danger */
+
+    --color-blaga-50: oklch(98.51% 0 0); /* #fafafa */
+    --color-blaga-100: oklch(97.91% 0 0); /* #f8f8f8 */
+    --color-blaga-200: oklch(89.37% 0.0011 197.14); /* #DBDCDC */
+    --color-blaga-300: oklch(80.5% 0.0014 286.37); /* #BFBFC0 */
+    --color-blaga-400: oklch(71.5% 0.0018 247.85); /* #A2A3A4 */
+    --color-blaga-500: oklch(61.98% 0.0032 264.53); /* #858688 */
+    --color-blaga-600: oklch(52.32% 0.004 247.9); /* #686A6C */
+    --color-blaga-700: oklch(42.04% 0.0051 271.29); /* #4C4D50 */
+    --color-blaga-800: oklch(31.23% 0.006 258.35); /* #2F3134 */
+    --color-blaga-900: oklch(19.09% 0.0087 264.35); /* #121418 */
+    --color-blaga-950: oklch(18.09% 0.0052 248.12); /* #101214 */
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+@layer base {
+	@import "./base/tmd-reset.css";
+	@import "./base/tmd-baseof.css";
+	@import "./base/tmd-typography.css";
+}
+
+@layer components {
+	@import "./components/tmd-header.css";
+	@import "./components/tmd-avatar.css";
+	@import "./components/tmd-sidebar.css";
+	@import "./components/tmd-dark-mode.css";
+	@import "./components/tmd-details.css";
+	@import "./components/tmd-notification.css";
+	@import "./components/tmd-user-action.css";
+
+}
+
+@layer utilities {
+    @import "./utilities/helpers.css";
+}

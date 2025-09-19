@@ -1,0 +1,48 @@
+/**
+ * This stylesheet defines styles for the dark mode component,
+ * including dropdown list icon, interactions, hover controls,
+ * and logout link functionality.
+ *
+ * Part of the Dashmind UI system.
+ *
+ * (c) Dashmind
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+/* container */
+.theme-switcher {
+	@apply ml-auto relative flex items-center;
+}
+
+.theme-toggle-btn {
+	@apply flex items-center justify-center cursor-pointer rounded-full
+	hover:bg-primary/30 active:bg-primary/50 group-hover:bg-primary/25 size-9 lg:size-10;
+}
+
+.theme-toggle-btn svg {
+	@apply text-blaga-700 dark:text-blaga-300;
+}
+
+/* container theme icons */
+.theme-options {
+	@apply absolute right-0 top-full left-auto;
+}
+
+.theme-options ul {
+	@apply shadow-md flex flex-col bg-blaga-100 dark:bg-blaga-800 rounded-lg p-2;
+}
+
+/* theme icon */
+.theme-option {
+	@apply flex items-center w-full px-6 py-2 rounded-lg cursor-pointer hover:bg-primary/25 active:bg-primary/50;
+}
+
+.theme-option svg {
+	@apply size-4 mr-4 text-blaga-700 dark:text-blaga-300;
+}
+
+.theme-option.active {
+	@apply text-primary;
+}
